@@ -17,12 +17,13 @@ function NumberCard({ icon, color, title, number, countUp }) {
         {iconMap[icon]}
       </span>
       <div className={styles.content}>
-        <p className={styles.title}>{title || 'No Title'}</p>
+        <p className={styles.title}>{title || 'No Title'}
+        </p>
         <p className={styles.number}>
           <CountUp
             start={0}
             end={number}
-            duration={2.75}
+            duration={3.75}
             useEasing
             useGrouping
             separator=","
