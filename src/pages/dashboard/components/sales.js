@@ -17,7 +17,7 @@ import styles from './sales.less'
 function Sales({ data }) {
   return (
     <div className={styles.sales}>
-      <div className={styles.title}>Yearly Sales</div>
+      <div className={styles.title}>Last week</div>
       <ResponsiveContainer minHeight={360}>
         <LineChart data={data}>
           <Legend
@@ -47,9 +47,9 @@ function Sales({ data }) {
           <XAxis
             dataKey="name"
             axisLine={{ stroke: Color.borderBase, strokeWidth: 1 }}
-            tickLine={false}
+            tickLine={true}
           />
-          <YAxis axisLine={false} tickLine={false} />
+          <YAxis axisLine={false} tickLine={true} />
           <CartesianGrid
             vertical={false}
             stroke={Color.borderBase}
@@ -88,7 +88,7 @@ function Sales({ data }) {
           />
           <Line
             type="monotone"
-            dataKey="Clothes"
+            dataKey="Temperature"
             stroke={Color.red}
             strokeWidth={3}
             dot={{ fill: Color.red }}
@@ -96,7 +96,7 @@ function Sales({ data }) {
           />
           <Line
             type="monotone"
-            dataKey="Electronics"
+            dataKey="Humedade"
             stroke={Color.green}
             strokeWidth={3}
             dot={{ fill: Color.green }}

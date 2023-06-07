@@ -25,20 +25,20 @@ export function getData() {
 }
 
 export const options = {
-  width: 800,
-  height: 220,
+  width: 200,
+  height: 200,
   greenColor: '#39ff14',
-  greenFrom:25,
-  greenTo: 75,
-  redColor: '#ff4500',
-  redFrom: 90,
-  redTo: 100,
+  greenFrom:5,
+  greenTo: 35,
   yellowColor: '#ffbf00',
-  yellowFrom: 75,
-  yellowTo: 90,
-  minorTicks: 5,
-  max: 130,
-  min: -10,
+  yellowFrom: 35,
+  yellowTo: 45,
+  redColor: '#ff4500',
+  redFrom: 45,
+  redTo: 50,
+  minorTicks: 4,
+  max: 50,
+  min: 0,
   animation: 'in',
   forceIFrame: false,
 };
@@ -61,7 +61,7 @@ function NumberCard() {
     <Card
       className={styles.numberCard}
       bordered={true}
-      bodyStyle={{ padding: 1 }}
+      bodyStyle={{ padding: 0 }}
     >
       {/* <Chart
         chartType="ScatterChart"
@@ -73,7 +73,7 @@ function NumberCard() {
       <Chart
         chartType="Gauge"
         width="100%"
-        height="235px"
+        height="220px"
         data={data}
         options={options}
       />

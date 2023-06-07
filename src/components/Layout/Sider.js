@@ -26,7 +26,7 @@ class Sider extends PureComponent {
         theme={theme}
         breakpoint="lg"
         trigger={null}
-        collapsible
+        collapsible={false}
         collapsed={collapsed}
         onBreakpoint={!isMobile && onCollapseChange}
         className={styles.sider}

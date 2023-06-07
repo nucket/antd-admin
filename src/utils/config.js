@@ -1,7 +1,7 @@
 module.exports = {
-  siteName: 'Poultry SYSTeel',
-  copyright: 'SYSTeel',
-  logoPath: '/poultry.png',
+  siteName: 'Poultry',
+  copyright: 'SYSTEEL®',
+  logoPath: '/logo.svg',
   apiPrefix: '/api/v1',
   fixedHeader: true, // sticky primary layout header
 

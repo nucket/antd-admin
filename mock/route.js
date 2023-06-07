@@ -5,24 +5,24 @@ const database = [
   {
     id: '1',
     icon: 'dashboard',
-    name: 'Dashboard',
+    name: 'main',
     zh: {
-      name: '仪表盘'
+      name: '主要的'
     },
     'pt-br': {
-      name: 'Dashboard'
+      name: 'principal'
     },
     route: '/dashboard',
   },
   {
     id: '2',
     breadcrumbParentId: '1',
-    name: 'Users',
+    name: 'Medication',
     zh: {
-      name: '用户管理'
+      name: '药物'
     },
     'pt-br': {
-      name: 'Usuário'
+      name: 'Medicamento'
     },
     icon: 'user',
     route: '/user',
@@ -30,12 +30,12 @@ const database = [
   {
     id: '7',
     breadcrumbParentId: '1',
-    name: 'Posts',
+    name: 'Statistics',
     zh: {
-      name: '用户管理'
+      name: '统计数据'
     },
     'pt-br': {
-      name: 'Posts'
+      name: 'Estatisticas'
     },
     icon: 'shopping-cart',
     route: '/post',
@@ -56,12 +56,12 @@ const database = [
   {
     id: '3',
     breadcrumbParentId: '1',
-    name: 'Request',
+    name: 'Feeding',
     zh: {
-      name: 'Request'
+      name: '喂食'
     },
     'pt-br': {
-      name: 'Requisição'
+      name: 'Alimentação'
     },
     icon: 'api',
     route: '/request',
@@ -69,12 +69,12 @@ const database = [
   {
     id: '4',
     breadcrumbParentId: '1',
-    name: 'UI Element',
+    name: 'Temperatures',
     zh: {
-      name: 'UI组件'
+      name: '温度'
     },
     'pt-br': {
-      name: 'Elementos UI'
+      name: 'Temperaturas'
     },
     icon: 'camera-o',
   },
@@ -82,12 +82,12 @@ const database = [
     id: '45',
     breadcrumbParentId: '4',
     menuParentId: '4',
-    name: 'Editor',
+    name: 'Inside',
     zh: {
-      name: 'Editor'
+      name: '内部'
     },
     'pt-br': {
-      name: 'Editor'
+      name: 'Interior'
     },
     icon: 'edit',
     route: '/editor',
@@ -95,9 +95,9 @@ const database = [
   {
     id: '5',
     breadcrumbParentId: '1',
-    name: 'Charts',
+    name: 'Chartes',
     zh: {
-      name: 'Charts'
+      name: 'Charters'
     },
     'pt-br': {
       name: 'Graficos'

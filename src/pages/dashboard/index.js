@@ -2,19 +2,19 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'umi'
 import { Row, Col, Card } from 'antd'
-import { Color } from 'utils'
+// import { Color } from 'utils'
 import { Page, ScrollBar } from 'components'
 import {
   NumberCard,
-  Quote,
+  // Quote,
   Sales,
-  Weather,
-  RecentSales,
-  Comments,
-  Completed,
-  Browser,
-  Cpu,
-  User,
+  // Weather,
+  // RecentSales,
+  // Comments,
+  // Completed,
+  // // Browser,
+  // Cpu,
+  // User,
 } from './components'
 import styles from './index.less'
 import store from 'store'
@@ -25,6 +25,7 @@ const bodyStyle = {
     background: '#fff',
   },
 }
+
 
 @connect(({ app, dashboard, loading }) => ({
   dashboard,
@@ -60,12 +61,14 @@ class Dashboard extends PureComponent {
         className={styles.dashboard}
       >
         <Row gutter={24}>
-          {numberCards}
+          { numberCards }
           <Col lg={18} md={24}>
             <Card
               bordered={false}
               bodyStyle={{
                 padding: '24px 36px 24px 0',
+                backgroundColor: '#fff',
+                borderRadius: '35px',
               }}
             >
               <Sales data={sales} />
@@ -74,7 +77,7 @@ class Dashboard extends PureComponent {
           <Col lg={6} md={24}>
             <Row gutter={24}>
               <Col lg={24} md={12}>
-                <Card
+                {/* <Card
                   bordered={false}
                   className={styles.weather}
                   bodyStyle={{
@@ -87,10 +90,10 @@ class Dashboard extends PureComponent {
                     {...weather}
                     loading={loading.effects['dashboard/queryWeather']}
                   />
-                </Card>
+                </Card> */}
               </Col>
               <Col lg={24} md={12}>
-                <Card
+                {/* <Card
                   bordered={false}
                   className={styles.quote}
                   bodyStyle={{
@@ -102,51 +105,51 @@ class Dashboard extends PureComponent {
                   <ScrollBar>
                     <Quote {...quote} />
                   </ScrollBar>
-                </Card>
+                </Card> */}
               </Col>
             </Row>
           </Col>
           <Col lg={12} md={24}>
-            <Card bordered={false} {...bodyStyle}>
+            {/* <Card bordered={false} {...bodyStyle}>
               <RecentSales data={recentSales} />
-            </Card>
+            </Card> */}
           </Col>
           <Col lg={12} md={24}>
-            <Card bordered={false} {...bodyStyle}>
+            {/* <Card bordered={false} {...bodyStyle}>
               <ScrollBar>
                 <Comments data={comments} />
               </ScrollBar>
-            </Card>
+            </Card> */}
           </Col>
           <Col lg={24} md={24}>
-            <Card
+            {/* <Card
               bordered={false}
               bodyStyle={{
                 padding: '24px 36px 24px 0',
               }}
             >
               <Completed data={completed} />
-            </Card>
+            </Card> */}
           </Col>
           <Col lg={8} md={24}>
-            <Card bordered={false} {...bodyStyle}>
+            {/* <Card bordered={false} {...bodyStyle}>
               <Browser data={browser} />
-            </Card>
+            </Card> */}
           </Col>
           <Col lg={8} md={24}>
-            <Card bordered={false} {...bodyStyle}>
+            {/* <Card bordered={false} {...bodyStyle}>
               <ScrollBar>
                 <Cpu {...cpu} />
               </ScrollBar>
-            </Card>
+            </Card> */}
           </Col>
           <Col lg={8} md={24}>
-            <Card
+            {/* <Card
               bordered={false}
               bodyStyle={{ ...bodyStyle.bodyStyle, padding: 0 }}
             >
               <User {...user} avatar={avatar} username={username} />
-            </Card>
+            </Card> */}
           </Col>
         </Row>
       </Page>
