@@ -12,9 +12,14 @@ import PublicLayout from './PublicLayout'
 import PrimaryLayout from './PrimaryLayout'
 import './BaseLayout.less'
 
+import SecondaryLayout from './SecondaryLayout';  // add secundary layouts 07 / 05 / 2023
+
+
+
 const LayoutMap = {
   primary: PrimaryLayout,
   public: PublicLayout,
+  secondary: SecondaryLayout, // add secundary layouts 07 / 05 / 2023
 }
 
 @withRouter

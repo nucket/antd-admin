@@ -10,7 +10,11 @@ module.exports = {
     {
       name: 'primary',
       include: [/.*/],
-      exclude: [/(\/(en|zh))*\/login/],
+      exclude: [/(\/(en|zh))*\/login/, /(\/(en|zh))*\/secondary\/(.*)/],
+    },
+    {
+      name: 'secondary',  // add secundary layouts 07 / 05 / 2023
+      include: [/(\/(en|zh))*\/secondary\/(.*)/],  // add secundary layouts 07 / 05 / 2023
     },
   ],
 
