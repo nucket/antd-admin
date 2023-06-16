@@ -26,7 +26,6 @@ const bodyStyle = {
   },
 }
 
-
 @connect(({ app, dashboard, loading }) => ({
   dashboard,
   loading,
@@ -61,7 +60,7 @@ class Dashboard extends PureComponent {
         className={styles.dashboard}
       >
         <Row gutter={24}>
-          { numberCards }
+          {numberCards}
           <Col lg={18} md={24}>
             <Card
               bordered={false}
