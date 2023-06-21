@@ -40,6 +40,8 @@
   },
   "devDependencies": {
     "@ant-design/compatible": "^5.1.0",
+    "@babel/plugin-syntax-flow": "^7.22.5",
+    "@babel/preset-flow": "^7.22.5",
     "@babel/preset-react": "^7.12.13",
     "@lingui/cli": "^3.8.0",
     "@lingui/macro": "^3.8.0",
