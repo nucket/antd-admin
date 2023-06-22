@@ -53,7 +53,7 @@ export const Constant = {
     grass: '#d6fbb5',
     sky: '#c1e0fc',
   },
-}
+};
 
 export Mock from 'mockjs'
 export qs from 'qs'

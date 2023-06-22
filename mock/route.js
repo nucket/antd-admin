@@ -5,24 +5,42 @@ const database = [
   {
     id: '1',
     icon: 'dashboard',
-    name: 'main',
+    name: 'Main',
     zh: {
       name: '主要的'
     },
     'pt-br': {
-      name: 'principal'
+      name: 'Principal'
+    },
+    'fr': {
+      name: 'Principal'
+    },
+    'es': {
+      name: 'Principal'
+    },
+    'ar': {
+      name: 'رئيسي'
     },
     route: '/dashboard',
   },
   {
     id: '2',
     breadcrumbParentId: '1',
-    name: 'Medication',
+    name: 'Medicine',
     zh: {
-      name: '药物'
+      name: '医学'
     },
     'pt-br': {
-      name: 'Medicamento'
+      name: 'Medicina'
+    },
+    'fr': {
+      name: 'Médecine'
+    },
+    'es': {
+      name: 'Medicina'
+    },
+    'ar': {
+      name: 'طبّ'
     },
     icon: 'user',
     route: '/user',
@@ -30,12 +48,21 @@ const database = [
   {
     id: '7',
     breadcrumbParentId: '1',
-    name: 'Statistics',
+    name: 'Food',
     zh: {
-      name: '统计数据'
+      name: '食物'
     },
     'pt-br': {
-      name: 'Estatisticas'
+      name: 'Comida'
+    },
+    'fr': {
+      name: 'Nourriture'
+    },
+    'es': {
+      name: 'Comida'
+    },
+    'ar': {
+      name: 'طعام'
     },
     icon: 'shopping-cart',
     route: '/post',
@@ -51,17 +78,35 @@ const database = [
     'pt-br': {
       name: 'Detalhes do usuário'
     },
+    'fr': {
+      name: 'Principal'
+    },
+    'es': {
+      name: 'Principal'
+    },
+    'ar': {
+      name: 'رئيسي'
+    },
     route: '/user/:id',
   },
   {
     id: '3',
     breadcrumbParentId: '1',
-    name: 'Feeding',
+    name: 'Indicators',
     zh: {
-      name: '喂食'
+      name: '指标'
     },
     'pt-br': {
-      name: 'Alimentação'
+      name: 'Indicadores'
+    },
+    'fr': {
+      name: 'Indicateurs'
+    },
+    'es': {
+      name: 'Indicadores'
+    },
+    'ar': {
+      name: 'مؤشرات'
     },
     icon: 'api',
     route: '/request',
@@ -69,12 +114,21 @@ const database = [
   {
     id: '4',
     breadcrumbParentId: '1',
-    name: 'Temperatures',
+    name: 'Statistics',
     zh: {
-      name: '温度'
+      name: '统计'
     },
     'pt-br': {
-      name: 'Temperaturas'
+      name: 'Estatísticas'
+    },
+    'fr': {
+      name: 'Statistiques'
+    },
+    'es': {
+      name: 'Estadísticas'
+    },
+    'ar': {
+      name: 'إحصائيات'
     },
     icon: 'camera-o',
   },
@@ -95,57 +149,108 @@ const database = [
   {
     id: '5',
     breadcrumbParentId: '1',
-    name: 'Chartes',
+    name: 'Storage',
     zh: {
-      name: 'Charters'
+      name: '存储'
     },
     'pt-br': {
-      name: 'Graficos'
+      name: 'Armazenamento'
+    },
+    'fr': {
+      name: 'Stockage'
+    },
+    'es': {
+      name: 'Almacenamiento'
+    },
+    'ar': {
+      name: 'تخزين'
     },
     icon: 'code-o',
   },
   {
-    id: '51',
-    breadcrumbParentId: '5',
-    menuParentId: '5',
-    name: 'ECharts',
+    id: '6',
+    breadcrumbParentId: '1',
+    name: 'Ventilation',
     zh: {
-      name: 'ECharts'
+      name: '通风'
     },
     'pt-br': {
-      name: 'ECharts'
+      name: 'Ventilação'
     },
-    icon: 'line-chart',
-    route: '/chart/ECharts',
+    'fr': {
+      name: 'Ventilation'
+    },
+    'es': {
+      name: 'Ventilación'
+    },
+    'ar': {
+      name: 'تهوية'
+    },
+    icon: 'code-o',
   },
   {
-    id: '52',
-    breadcrumbParentId: '5',
-    menuParentId: '5',
-    name: 'HighCharts',
+    id: '7',
+    breadcrumbParentId: '1',
+    name: 'Other',
     zh: {
-      name: 'HighCharts'
+      name: '其他'
     },
     'pt-br': {
-      name: 'HighCharts'
+      name: 'Outro'
     },
-    icon: 'bar-chart',
-    route: '/chart/highCharts',
+    'fr': {
+      name: 'Autre'
+    },
+    'es': {
+      name: 'Otros'
+    },
+    'ar': {
+      name: 'آخر'
+    },
+    icon: 'code-o',
   },
-  {
-    id: '53',
-    breadcrumbParentId: '5',
-    menuParentId: '5',
-    name: 'Rechartst',
-    zh: {
-      name: 'Rechartst'
-    },
-    'pt-br': {
-      name: 'Rechartst'
-    },
-    icon: 'area-chart',
-    route: '/chart/Recharts',
-  },
+  // {
+  //   id: '51',
+  //   breadcrumbParentId: '5',
+  //   menuParentId: '5',
+  //   name: 'ECharts',
+  //   zh: {
+  //     name: 'ECharts'
+  //   },
+  //   'pt-br': {
+  //     name: 'ECharts'
+  //   },
+  //   icon: 'line-chart',
+  //   route: '/chart/ECharts',
+  // },
+  // {
+  //   id: '52',
+  //   breadcrumbParentId: '5',
+  //   menuParentId: '5',
+  //   name: 'HighCharts',
+  //   zh: {
+  //     name: 'HighCharts'
+  //   },
+  //   'pt-br': {
+  //     name: 'HighCharts'
+  //   },
+  //   icon: 'bar-chart',
+  //   route: '/chart/highCharts',
+  // },
+  // {
+  //   id: '53',
+  //   breadcrumbParentId: '5',
+  //   menuParentId: '5',
+  //   name: 'Rechartst',
+  //   zh: {
+  //     name: 'Rechartst'
+  //   },
+  //   'pt-br': {
+  //     name: 'Rechartst'
+  //   },
+  //   icon: 'area-chart',
+  //   route: '/chart/Recharts',
+  // },
 ]
 
 module.exports = {

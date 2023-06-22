@@ -33,6 +33,21 @@ module.exports = {
         flag: '/america.svg',
       },
       {
+        key: 'fr',
+        title: 'French',
+        flag: '/france.png',
+      },
+      {
+        key: 'es',
+        title: 'Español',
+        flag: '/spain.png',
+      },
+      {
+        key: 'ar',
+        title: 'عربي',
+        flag: '/saudi-arabia.png',
+      },
+      {
         key: 'zh',
         title: '中文',
         flag: '/china.svg',

@@ -65,6 +65,20 @@ const adminUsers = [
     permissions: userPermission.DEVELOPER,
     avatar: randomAvatar(),
   },
+  {
+    id: 3,
+    username: 'systeel',
+    password: 'systeel',
+    permissions: userPermission.DEVELOPER,
+    avatar: randomAvatar(),
+  },
+  {
+    id: 4,
+    username: 'avicultor',
+    password: '123456',
+    permissions: userPermission.DEFAULT,
+    avatar: randomAvatar(),
+  },
 ]
 
 const queryArray = (array, key, keyAlias = 'key') => {

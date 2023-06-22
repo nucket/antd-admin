@@ -94,7 +94,10 @@
     "locales": [
       "en",
       "zh",
-      "pt-br"
+      "pt-br",
+      "fr",
+      "es",
+      "ar"
     ],
     "catalogs": [
       {
